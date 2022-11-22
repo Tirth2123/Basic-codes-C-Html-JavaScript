@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <p id="date"></p>
+        <p id="join">join</p>
+        <p id="pop">pop</p>
+        <p id="push">push</p>
+        <p id="shift">shift</p>
+        <p id="unshift">unshift</p>
+        <p id="concat">concat</p>
+        <p id="splice">splice</p>
+        <p id="slice">slice</p>
+        <p id="tosrting">tosrting</p>
+        <script>
+        
+            //date function        
+        
+            var date =new Date();
+            document.getElementById("date").innerHTML=date;
+
+            //array funtions
+
+            const fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("join").innerHTML = fruits.join(" , ")
+            document.getElementById("pop").innerHTML=fruits.pop();
+            fruits.push("Kiwi");
+            document.getElementById("push").innerHTML = fruits;
+            fruits.shift();
+            document.getElementById("shift").innerHTML = fruits
+            fruits.unshift("Lemon");
+            document.getElementById("unshift").innerHTML = fruits;
+
+            //new array
+
+            const myGirls = ["Cecilie", "Lone"];
+            const myBoys = ["Emil", "Tobias", "Linus"];
+            const myChildren = myGirls.concat(myBoys);
+            document.getElementById("concat").innerHTML = myChildren;
+        
+            //new array end
+
+            fruits.splice(1, 0, "Lemon", "Kiwi");
+            document.getElementById("splice").innerHTML = fruits;
+
+            //new fruits
+
+            const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+            const citrus = fruits1.slice(1);
+            document.getElementById("slice").innerHTML = fruits1 + "<br><br>" + citrus;
+
+            //show output of spliced array
+        
+            document.getElementById("tosrting").innerHTML = fruits.toString();
+            let index = fruits.indexOf("Apple", 3);
+            document.getElementById("demo").innerHTML = index;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+console.time('time taken');
+console.log('Im Tirth Shah');
+console.log(21+23);
+console.log([51,54,424,32,21]);
+console.log({Name: 'Tirth', Marks:51});
+console.table({Name: 'Tirth', Marks:51});
+console.warn("This Is Warning");
+console.timeEnd('time taken');
+//console .assert(age>190,'Age is not possible');
+console.error('this is error');

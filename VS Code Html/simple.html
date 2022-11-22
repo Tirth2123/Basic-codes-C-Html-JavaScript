@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script>
+            function Max()
+            {
+                const a = Number(prompt("Enter first number: "));
+                const b = Number(prompt("Enter second number: "));
+                const c = Number(prompt("Enter third number: "));
+                //max
+                document.getElementById("N1").innerHTML="Number 1 is: "+a;
+                document.getElementById("N2").innerHTML="Number 2 is: "+b;
+                document.getElementById("N3").innerHTML="Number 3 is: "+c;
+                if(a>b && a>c){
+                    document.getElementById("add").innerHTML= a+" is Grater than "+b+" & "+c;
+                }
+                else if(b>c && b>a){
+                    document.getElementById("add").innerHTML= b+" is Grater than "+a+" & "+c;
+                }
+                else{
+                    document.getElementById("add").innerHTML= c+" is Grater than "+a+" & "+b;
+                }
+            }
+            function Add()
+            {
+                const a = Number(prompt("Enter first number: "));
+                const b = Number(prompt("Enter second number: "));
+                const c = Number(prompt("Enter third number: "));
+                var d=a+b+c;
+
+                //addition
+
+                document.getElementById("N1").innerHTML="Number 1 is: "+a;
+                document.getElementById("N2").innerHTML="Number 2 is: "+b;
+                document.getElementById("N3").innerHTML="Number 3 is: "+c;
+                document.getElementById("add").innerHTML="Addition of "+a+" , "+b+" and "+c+" is: "+d;
+                document.getElementById("again").innerHTML="Press again if you want";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Press button</h1>
+        <input type="button" value="Addition" onclick="Add()">
+        <input type="button" value="Maximum" onclick="Max()">
+        <h5 id="again"><b></b></h5>
+        <p id="N1"></p>
+        <p id="N2"></p>
+        <p id="N3"></p>
+        <p id="add"></p>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            button{
+                width: 100px;
+                height: 100px;
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="parul()">1st</button>
+        <button onclick="bmi()">2nd</button>
+        <script>
+            //window.alert("hit");
+            function parul()
+            {
+                const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+                const d = new Date();
+                let day = weekday[d.getDay()];
+
+                let person = prompt("enter week-day ");
+                confirm("Press ok button to confirm your input");
+                if (person == day) 
+                {
+                    window.alert("hit");
+                }
+                else
+                {
+                    window.alert("missed");
+                }
+            }
+            function bmi()
+            {
+                let weight = prompt("enter weight ");
+                let height = prompt("enter height ");
+                let bmi=weight/height^2;
+                window.alert(bmi);  
+            }
+        </script>
+    </body>
+</html>
